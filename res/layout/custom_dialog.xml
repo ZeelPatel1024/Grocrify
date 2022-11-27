@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1F6FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:background="#C1F6FF"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="422dp"
+            android:backgroundTint="#7FD5C8">
+
+            <EditText
+                android:id="@+id/nameOfReminder"
+                android:layout_width="289dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073" />
+
+            <EditText
+                android:id="@+id/amountBought"
+                android:layout_width="289dp"
+                android:layout_height="59dp"
+                android:ems="10"
+                android:hint="Amount Bought"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.261" />
+
+            <Button
+                android:id="@+id/setReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#323E7C"
+                android:text="Submit"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.957" />
+
+            <Button
+                android:id="@+id/dateBought"
+                android:layout_width="254dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="164dp"
+                android:backgroundTint="#00153E"
+                android:text="Date Bought"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/expireDate"
+                android:layout_width="254dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="260dp"
+                android:backgroundTint="#00153E"
+                android:text="Expire Date"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idDateBought"
+                android:layout_width="202dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="#03134C"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.57" />
+
+            <TextView
+                android:id="@+id/idDateExpire"
+                android:layout_width="202dp"
+                android:layout_height="36dp"
+                android:fontFamily="@font/alike_angular"
+                android:text="Date2"
+                android:textAlignment="center"
+                android:textColor="#03134C"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.81" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

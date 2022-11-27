@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1F6FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:background="#C1F6FF"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="422dp"
+            android:backgroundTint="#7FD5C8">
+
+            <EditText
+                android:id="@+id/nameOfReminder"
+                android:layout_width="289dp"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:hint="Name Of Reminder"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.068" />
+
+            <Button
+                android:id="@+id/setReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#6EAEBD"
+                android:text="Set Reminder"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.786" />
+
+            <Button
+                android:id="@+id/butChooseDate"
+                android:layout_width="262dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#478B9C"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Choose Date"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/butChooseTime"
+                android:layout_width="262dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="196dp"
+                android:backgroundTint="#478B9C"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Choose Time"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idDateChosen"
+                android:layout_width="164dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Date"
+                android:textAlignment="center"
+                android:textColor="#000A3E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/setReminder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/idTimeChosen"
+                android:layout_width="164dp"
+                android:layout_height="29dp"
+                android:fontFamily="@font/abril_fatface"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="#000A3E"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/setReminder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.811" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
